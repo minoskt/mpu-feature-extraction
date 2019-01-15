@@ -42,7 +42,7 @@ def extract_features(pinfo, df, ff):
 
     # This example uses the 'Acc' sensor (Accelerometer) and extracts the
     # average acceleration of the last measurement before each Esm event.
-    df['Acc_Avg'].fillna(method='backfill', inplace=True)
+    df['Acc_Avg'].fillna(method='ffill', inplace=True)
     ff['ft_last_acc'] = df['Acc_Avg']
 
 
