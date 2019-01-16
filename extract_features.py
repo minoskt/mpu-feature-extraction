@@ -142,11 +142,11 @@ def ensure_path(path, clean=False):
 
 def parse_arguments(args):
 
-    parser = argparse.ArgumentParser(description="Extract Features (using 'ft_' column prefix)")
+    parser = argparse.ArgumentParser(description="extract features (using 'ft_' as a column prefix)")
     parser.add_argument('-p', '--parallel', dest='parallel', type=int, nargs=1, metavar='nproc', default=[0],
-                        help='execute in parallel, nproc=number of processors to use')
+                        help='execute in parallel, nproc=number of processors to use.')
     parser.add_argument('-sd', '--sudden-death', dest='sudden_death', action='store', nargs='*', metavar='uuid',
-                        help='sudden death: use particular uuid to test the features extraction; either specify the uuid or omit it and it reads out a default one from code (u000)')
+                        help='sudden death: use particular uuid to test the features extraction; either specify the uuid or omit it and it reads out a default one from code (ie. u000)')
     parsed = vars(parser.parse_args(args))
 
     return parsed
@@ -202,13 +202,13 @@ def main(args):
 
 if __name__ == '__main__':
 
+    # parse args
+    args = parse_arguments(sys.argv[1:])
+
     try:
         # track time
         print("Started at: %s" % (datetime.now()))
         start_time = time.time()
-
-        # parse args
-        args = parse_arguments(sys.argv[1:])
 
         # call main
         main(args)
