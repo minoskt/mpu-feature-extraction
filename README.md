@@ -1,6 +1,7 @@
 # Mobile Phone Use Dataset: Feature Extraction Script
 
-This script can be used as an example for extracting features from the [Mobile Phone Use Dataset](https://sites.google.com/view/mobile-phone-use-dataset) (also known as MPU). It is written in Python 3.7 and supports multi-processing (once core is used per user).
+This script can be used as an example for extracting features from the [Mobile Phone Use Dataset](https://sites.google.com/view/mobile-phone-use-dataset) (also known as MPU). It is written in Python 3.7 and supports multi-processing (one core is used per user).
+
 
 ## Usage Information
 
@@ -13,6 +14,7 @@ Execude the script using the command:
 `
 $ python feature_extraction.py
 `
+
 
 ## Optional Arguments
 
