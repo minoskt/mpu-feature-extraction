@@ -5,7 +5,7 @@ This script can be used as an example for extracting features from the [Mobile P
 
 ## Usage Information
 
-First download the [MPU dataset](https://sites.google.com/view/mobile-phone-use-dataset) and decompress it under the same folder of the script.
+First download the [MPU dataset](https://crawdad.org/telefonica/mobilephoneuse/20190429/) and decompress it under the same folder of the script.
 
 The script uses some third-party libraries that need to be installed (e.g. pandas and tqdm). Most of them are included with the [Anaconda 3.7 Distribution](https://www.anaconda.com/download/).
 
